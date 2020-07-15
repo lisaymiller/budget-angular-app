@@ -4,10 +4,14 @@
 
 <section class="total-budget-section">
   <h2 class="green">1500</h2>
+  <p>Use positive amounts for income, and negative amounts for expenses</p>
 </section>
 
-<app-add-item-form></app-add-item-form>
+<app-add-item-form (formSubmit)="addItem($event)"></app-add-item-form>
 
 <hr style="margin-top: 0;" />
 
-<app-budget-item-list></app-budget-item-list>
+<app-budget-item-list
+  [budgetItems]="budgetItems"
+  (delete)="deleteItem($event)"
+></app-budget-item-list>

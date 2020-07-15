@@ -21,6 +21,7 @@
 
 .total-budget-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -28,6 +29,7 @@
   background: $dark;
 
   h2 {
+    padding: 2.75rem;
     font-family: "Lato";
     font-weight: 400;
     font-size: 3.5rem;
