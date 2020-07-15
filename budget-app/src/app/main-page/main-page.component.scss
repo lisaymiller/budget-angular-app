@@ -1,4 +1,4 @@
-@import "../../main-styles.scss";
+@import "../main-styles.scss";
 
 .top-bar {
   display: flex;
@@ -40,15 +40,5 @@
     &.red {
       color: lighten($red, 12%);
     }
-  }
-}
-
-.add-items-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .add-items-container {
-    width: 42.5rem;
   }
 }

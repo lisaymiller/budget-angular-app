@@ -1,9 +1,11 @@
-@import "../../../main-styles.scss";
+@import "../../main-styles.scss";
 
 .root {
   display: flex;
   width: 100%;
   position: relative;
+
+  margin-bottom: 1.25rem;
 
   &:hover {
     .x-icon-button {
