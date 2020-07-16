@@ -13,7 +13,7 @@ export class EditItemModalComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public item: BudgetItem
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   onSubmitted(updatedItem: BudgetItem) {
     this.dialogRef.close(updatedItem);
