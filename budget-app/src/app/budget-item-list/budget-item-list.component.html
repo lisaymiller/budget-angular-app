@@ -7,6 +7,7 @@
           <app-budget-item-card
             *ngIf="item.amount >= 0"
             [item]="item"
+            (cardClick)="onCardClicked(item)"
             (xButtonClick)="onDeleteButtonClicked(item)"
           ></app-budget-item-card>
         </div>
@@ -19,6 +20,7 @@
           <app-budget-item-card
             *ngIf="0 > item.amount"
             [item]="item"
+            (cardClick)="onCardClicked(item)"
             (xButtonClick)="onDeleteButtonClicked(item)"
           ></app-budget-item-card>
         </div>
