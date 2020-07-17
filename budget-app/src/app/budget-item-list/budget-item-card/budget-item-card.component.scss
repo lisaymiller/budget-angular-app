@@ -68,7 +68,7 @@
 }
 
 .expense {
-  p {
+  span {
     color: $red;
   }
   .amount {
@@ -77,7 +77,7 @@
 }
 
 .income {
-  p {
+  span {
     color: $green;
   }
   .amount {

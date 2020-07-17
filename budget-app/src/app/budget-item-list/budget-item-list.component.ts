@@ -24,6 +24,7 @@ export class BudgetItemListComponent implements OnInit {
   onCardClicked(item: BudgetItem) {
     const dialogRef = this.dialog.open(EditItemModalComponent, {
       width: '580px',
+
       data: item,
     });
 
